@@ -1,0 +1,13 @@
+# Core libs
+pillow
+psycopg2
+django>=1.10,<1.11
+django-cors-headers
+djangorestframework<3.5
+django-widget-tweaks==1.4.1
+django-grappelli
+django_ses
+
+# Dev tools
+django-extensions
+ipython

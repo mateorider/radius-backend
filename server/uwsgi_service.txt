@@ -1,0 +1,8 @@
+[Unit]
+Description=radius django with uwsgi
+
+[Service]
+ExecStart=/usr/local/bin/uwsgi --uid www-data --gid www-data --http 127.0.0.1:8080 --vacuum --virtualenv /opt/virtualenvs/radius --pythonpath /opt/src/radius-backend --module=radius.wsgi:application --logfile-chmod 664 --logto2 /var/log/uwsgi.log --ini /opt/src/radius-backend/server/uwsgi.ini --enable-threads --single-interpreter --die-on-term --env=FQDN=api.radiusfinancial.com --env=DB_NAME=radius_backend --env=DB_PASS=radius_backend --env=DB_USER=radius_backend --env=DB_HOST=localhost --env=SCHEMA=https --env=DJANGO_SETTINGS_MODULE=radius.settings.production
+
+[Install]
+WantedBy=network-online.target

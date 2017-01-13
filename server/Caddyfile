@@ -1,0 +1,15 @@
+https://api.radiusfinancial.com {
+    tls dustinbelliston@gmail.com {
+        dns route53
+    }
+
+    root /var/media/radius/
+
+    proxy /api http://localhost:8080/
+    proxy /admin http://localhost:8080/
+    proxy /download http://localhost:8080/
+    proxy /grappelli http://localhost:8080/
+    proxy /reset-password http://localhost:8080/
+    proxy /reset http://localhost:8080/    
+    proxy /validate http://localhost:8080/
+}

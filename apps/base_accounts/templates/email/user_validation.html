@@ -1,0 +1,20 @@
+{% extends "email/email_base.html" %}
+
+{% block content %}
+    <h3 style="margin: 0;padding: 0;{{ settings.EMAIL.FONT_CSS_HEADER }};line-height: 1.1;margin-bottom: 15px;color: #000;font-weight: 500;font-size: 27px;">Welcome!</h3>
+
+    <p class="lead" style="margin: 0;padding: 0;{{ settings.EMAIL.FONT_CSS }};margin-bottom: 10px;font-weight: normal;font-size: 17px;line-height: 1.6;">We received your request to start using the Benefit Sculptor. We are excited to start helping you really see what is going on with your benefits!</p>
+
+    <!-- <p style="margin: 0;padding: 0;{{ settings.EMAIL.FONT_CSS }};margin-bottom: 10px;font-weight: normal;font-size: 14px;line-height: 1.6;">Before you get started we need to confirm your email address.</p> -->
+
+    <!-- <p class="callout" style="margin: 0;padding: 15px;{{ settings.EMAIL.FONT_CSS }};margin-bottom: 15px;font-weight: normal;font-size: 14px;line-height: 1.6;background-color: {{ settings.EMAIL.HIGHLIGHT_COLOR }};">
+        <a href="{{ url }}" style="margin: 0;padding: 0;{{ settings.EMAIL.FONT_CSS }};color: #2BA6CB;font-weight: bold;">Validate Account</a>
+    </p>
+    LINK {{ url }} -->
+
+    <p style="margin: 0;padding: 0;{{ settings.EMAIL.FONT_CSS }};margin-bottom: 10px;font-weight: normal;font-size: 14px;line-height: 1.6;">We will send you another email once we have finished setting up your account.</p>
+
+{% endblock %}
+
+{% block unsubscribe %}
+{% endblock %}
