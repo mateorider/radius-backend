@@ -1,4 +1,4 @@
-# radius Backend
+# Radius Backend
 
 ## Setup
 1. Follow this wiki page to get [dependencies installed][dependencies_installed]
